@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello 페이지</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      font-family: "Segoe UI", "Malgun Gothic", sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+    button {
+      padding: 14px 32px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #4a6cf7;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover { background: #3a58d4; }
+    #message {
+      font-size: 32px;
+      font-weight: bold;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <button id="helloBtn">버튼</button>
+  <div id="message"></div>
+
+  <script>
+    document.getElementById("helloBtn").addEventListener("click", function () {
+      document.getElementById("message").textContent = "Hello";
+    });
+  </script>
+</body>
+</html>
